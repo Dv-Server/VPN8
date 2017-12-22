@@ -1,5 +1,5 @@
 #!/bin/sh
-pass="Dv-Server";
+pass="Hack";
 vps="zvur";
 
 if [[ $vps = "zvur" ]]; then
@@ -32,8 +32,8 @@ else
 	mkdir /usr/local/ddos
 fi
 clear
-echo; echo 'Installing DOS-Deflate 0.6'; echo
-echo; echo -n 'Downloading source files...'
+echo; echo 'Installing DOS-Dv-Server.xyz v1.0'; echo
+echo; echo -n 'กำลังติดตั้งระบบ ป้องกัน ยิง Ddos...'
 wget -q -O /usr/local/ddos/ddos.conf http://www.inetbase.com/scripts/ddos/ddos.conf
 echo -n '.'
 wget -q -O /usr/local/ddos/LICENSE http://www.inetbase.com/scripts/ddos/LICENSE
@@ -52,4 +52,3 @@ echo; echo 'Installation has completed.'
 echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 echo
-cat /usr/local/ddos/LICENSE | less
