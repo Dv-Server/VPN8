@@ -14,14 +14,14 @@ cd
 # check registered ip
 wget -q -O IPcarding $source/master/IPcarding.txt
 if ! grep -w -q $pass IPcarding; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
+	echo "หมายเลข IP ของท่านไม่มี ในระบบของเรา กรุณาเติมเงินสั่งซื้อ สคริป ด้วยนะคับ!"
 	if [[ $vps = "zvur" ]]; then
-		echo "ไม่สามารถ ใช้งานได้นะคับ"
+		echo "ระบบกำลังต ตั้งให้นะคับ โปรดรอสักครู่"
 	else
-		echo "Hubungi: editor YUSUS-ARDIANSYAH"
+		echo "ขอบพระคุณ ที่ใช้บริการจากเรา WWW.Dv-Server.XYZ"
 	fi
 	rm -f /root/IPcarding
-	rm /root/IPcarding
+
 	exit
 fi
 
